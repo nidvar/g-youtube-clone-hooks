@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+body{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+h3{
+  margin: 10px 0 10px 0;
+}
+.Display{
+  display:flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.SearchBar{
+  margin: 10px 0 10px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.SearchBar input{
+  width:100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.App{
+  width:80%;
+  margin:auto;
+}
+
+.SingleVideo{
+  margin:5px;
+  display:flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.SingleVideo img{
+  margin-right:5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.VideoDetail{
+  border-radius: 5px;
+  padding:5px;
+  width:100%;
+}
+
+.Detail{
+  margin-top:15px;
+}
+
+.VideoList{
+  min-width:500px;
+}
+.resp-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.resp-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .App{
+    width:90%;
   }
-  to {
-    transform: rotate(360deg);
+  .Display{
+    display:flex;
+    flex-direction: column;
+  }
+  .SingleVideo{
+    display:flex;
+    flex-direction: column;
+  }
+  .SingleVideo img{
+    width:100%;
+  }
+  iframe{
+    width:100%;
   }
 }
